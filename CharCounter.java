@@ -1,12 +1,11 @@
-
-// import java.util.*;
 import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import javax.swing.*;
 
 class Jframe implements ActionListener {
+	// Creating the textArea
 	JTextArea t1 = new JTextArea();
-	JScrollPane scrollV = new JScrollPane(t1, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+	JScrollPane scrollV = new JScrollPane(t1, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
 			JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 	JLabel l8 = new JLabel();
 	JLabel l9 = new JLabel();
@@ -25,8 +24,6 @@ class Jframe implements ActionListener {
 		JLabel l5 = new JLabel("Numbers: ");
 		JLabel l6 = new JLabel("Spaces: ");
 		JLabel l7 = new JLabel("Symbols: ");
-
-		// Creating the TextFields
 
 		// Creating the buttons
 		JButton b1 = new JButton("Count");
