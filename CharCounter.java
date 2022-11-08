@@ -29,6 +29,7 @@ class Jframe implements ActionListener {
 		JButton b1 = new JButton("Count");
 
 		// Setting the bounds
+		l1.setBounds(160, 10, 150, 20);
 		l2.setBounds(20, 40, 250, 25);
 		l3.setBounds(20, 160, 250, 25);
 		l4.setBounds(20, 200, 60, 25);
