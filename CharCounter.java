@@ -5,7 +5,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.*;
 
 class Jframe implements ActionListener {
-	JTextPane t1 = new JTextPane();
+	JTextArea t1 = new JTextArea();
+	JScrollPane scrollV = new JScrollPane(t1, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+			JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 	JLabel l8 = new JLabel();
 	JLabel l9 = new JLabel();
 	JLabel l10 = new JLabel();
@@ -40,8 +42,7 @@ class Jframe implements ActionListener {
 		l9.setBounds(120, 240, 60, 25);
 		l10.setBounds(120, 280, 60, 25);
 		l11.setBounds(120, 320, 60, 25);
-
-		t1.setBounds(220, 45, 200, 100);
+		scrollV.setBounds(220, 45, 200, 100);
 		b1.setBounds(220, 150, 80, 25);
 
 		b1.addActionListener(this);
@@ -58,7 +59,8 @@ class Jframe implements ActionListener {
 		f.add(l9);
 		f.add(l10);
 		f.add(l11);
-		f.add(t1);
+		t1.setLineWrap(true);
+		f.add(scrollV);
 		f.add(b1);
 		f.setLayout(null);
 		f.setSize(500, 400);
