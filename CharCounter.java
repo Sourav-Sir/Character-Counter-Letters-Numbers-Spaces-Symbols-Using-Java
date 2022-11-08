@@ -59,9 +59,7 @@ class Jframe implements ActionListener {
 		f.add(l10);
 		f.add(l11);
 		f.add(t1);
-		;
 		f.add(b1);
-
 		f.setLayout(null);
 		f.setSize(500, 400);
 		f.setVisible(true);
