@@ -63,7 +63,6 @@ class Jframe implements ActionListener {
 		f.setLayout(null);
 		f.setSize(500, 400);
 		f.setVisible(true);
-
 	}
 
 	@Override
@@ -96,9 +95,7 @@ class Jframe implements ActionListener {
 public class CharCounter {
 
 	public static void main(String[] args) {
-
 		new Jframe();
-
 	}
 
 }
